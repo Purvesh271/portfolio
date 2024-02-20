@@ -9,6 +9,7 @@
 body{
   background-color: #14131A;
   display: flex;
+  color: white;
   
 }
 
@@ -23,7 +24,7 @@ body{
   color: white;
   font-size: 30px;
   font-weight: 600;
-  position: absolute;
+  position: fixed;
   left: 20px;
   line-height: 60px;
   margin-top: 0.8rem;
@@ -140,15 +141,23 @@ body{
   opacity: 1;
 }
 
+
+.mainbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /*                           HOME STYLLING                    */
 #home{
   display: flex;
   flex-direction: column;
   color: whitesmoke;
   justify-content: center;
-  margin:0 20%;
+  margin:0rem 20% 14rem 20%;
   font-size: 22px;
   letter-spacing: 1px;
+  height:100vh;
 
 }
 .content{
@@ -164,3 +173,81 @@ body{
   letter-spacing: 1.25px;
   
 }
+
+/*                           ABOUT STYLLING                    */
+#about{
+  margin: 12rem 20% 14rem 20%;
+  width: fit-content;
+  height: 60vh;
+}
+.pg2{
+  letter-spacing: 1.5px;
+  padding: 1.5rem;
+}
+
+.pg2 h1{
+  margin: 10rem 0 1.5rem 0;
+  text-decoration: underline;
+  color: #c9c6c6;
+}
+.pg2 p{
+  font-size: 22px;
+  word-spacing: 2px;
+  line-height: 2.75rem;
+}
+
+
+/*                           SKILLS STYLLING                    */
+#skills{
+  margin: 3.5rem 20% 14rem 20%;
+  height: 50vh;
+
+}
+#skills h1{
+  margin: 2rem;
+  text-decoration: underline;
+  color: #c9c6c6;
+
+}
+
+
+/*   CARD STYLE    */
+.card{
+  height: 7rem;
+  width: 7rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8B8A91;
+  background-color: #14131A;
+  transition: ease-in-out 0.5s;
+}
+
+.card img{
+  background-size: cover ;
+  height: 7rem;
+  width: 7.5rem;
+  mix-blend-mode:screen;
+}
+.card:hover{
+  box-shadow:0px 0px 15px rgb(122, 121, 121)
+}
+
+/*  DECK STYLE     */
+
+.deck{
+  padding: 1rem;
+  align-items: center;
+  background-color: #4848482c;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+#d1 , #d2{
+  display: flex;
+}
+
