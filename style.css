@@ -54,7 +54,7 @@ body{
   position: absolute;
   left: 50px;
   color: yellow;
-  text-decoration: none;
+  text-decoration: underline;
   font-size:20px ;
   font-weight: 600;
   
@@ -154,7 +154,7 @@ body{
   flex-direction: column;
   color: whitesmoke;
   justify-content: center;
-  margin:0rem 20% 14rem 20%;
+  margin:0rem 20% 10rem 20%;
   font-size: 22px;
   letter-spacing: 1px;
   height:100vh;
@@ -176,7 +176,7 @@ body{
 
 /*                           ABOUT STYLLING                    */
 #about{
-  margin: 12rem 20% 14rem 20%;
+  margin: 0 20% 14rem 20%;
   width: fit-content;
   height: 60vh;
 }
@@ -199,8 +199,9 @@ body{
 
 /*                           SKILLS STYLLING                    */
 #skills{
-  margin: 3.5rem 20% 14rem 20%;
-  height: 50vh;
+  margin: 10rem 20% 20rem 20%;
+  height: 100vh;
+  padding-top: 5rem;
 
 }
 #skills h1{
@@ -211,8 +212,8 @@ body{
 }
 
 
-/*   CARD STYLE    */
-.card{
+/*   lang STYLE    */
+.lang{
   height: 7rem;
   width: 7rem;
   padding: 1rem;
@@ -227,14 +228,14 @@ body{
   transition: ease-in-out 0.5s;
 }
 
-.card img{
+.lang img{
   background-size: cover ;
   height: 7rem;
   width: 7.5rem;
   mix-blend-mode:screen;
 }
-.card:hover{
-  box-shadow:0px 0px 15px rgb(122, 121, 121)
+.lang:hover{
+  box-shadow:0px 0px 30px rgb(122, 121, 121)
 }
 
 /*  DECK STYLE     */
@@ -251,3 +252,109 @@ body{
   display: flex;
 }
 
+
+/*                           PROJECTS STYLLING                    */
+#projects{
+  margin: 0 20% 16rem 20%;
+  height: 50vh;
+
+}
+#projects h1{
+  margin: 2rem;
+  text-decoration: underline;
+  color: #c9c6c6;
+
+}
+
+/*    CARDS STYLING      */
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contner {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card .row .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card .row .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 1;
+  transform: translateY(10px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: rgba(255, 255, 255, 0.753);
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+/* input:checked + label .description {
+  opacity: 1 ;
+  transform: translateY(0) ;
+} */
+
+.card[for="c1"] {
+  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.card[for="c2"] {
+  background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.card[for="c3"] {
+  background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.card[for="c4"] {
+  background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
